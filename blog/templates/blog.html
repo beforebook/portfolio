@@ -1,0 +1,16 @@
+<h1>我的博客</h1>
+
+{% for item in blog.all %}
+{{ item.title }}
+<br>
+<br>
+{{ item.date }}
+<br>
+<br>
+<img src="{{ item.image.url }}" height="20%">
+<br>
+<br>
+{{ item.text }}
+<br>
+<br>
+{% endfor %}
